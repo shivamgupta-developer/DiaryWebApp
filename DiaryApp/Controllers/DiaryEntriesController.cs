@@ -15,7 +15,6 @@ namespace DiaryApp.Controllers
 
         public IActionResult Index()
         {
-            int x = "error";
             List<DiaryEntry> objDiaryEntries = new List<DiaryEntry>();
             objDiaryEntries = _db.DiaryEntries.ToList();
             return View(objDiaryEntries);
